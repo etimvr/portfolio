@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+.rightSide {
+    display: flex;
+    gap: 42px;
+}
+
+.text {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+}
