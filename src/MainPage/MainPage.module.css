@@ -1,4 +1,11 @@
-.mainPage {
+.header {
   background-color: #81B769;
   padding-top: 32px;
+}
+
+.mainPage {
+  background-color: #81B769;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }

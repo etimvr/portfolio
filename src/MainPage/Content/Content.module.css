@@ -1,0 +1,60 @@
+.text1 {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.text2 {
+    font-family: DynaPuff;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.text3 {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 44px;
+    position: relative;
+}
+
+.text4 {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    left: 65px;
+    top: 236px;
+}
+.flowers {
+    position: absolute;
+    left: 1550px;
+    top: 373px;
+}
+.hearts {
+    position: absolute;
+    left: 470px;
+    top: 460px;
+}
+.product {
+    position: absolute;
+    left: 1444px;
+    top: 275px;
+}
+.star {
+    position: absolute;
+    left: 1406px;
+    top: 563px;
+}
