@@ -9,8 +9,12 @@
     display: flex;
 }
 
-.picture {
+.picture1 {
     padding-right: 90px;
+}
+
+.picture2 {
+    padding-bottom: 24px;
 }
 
 .text1 {
@@ -36,8 +40,57 @@
     font-weight: 400;
     margin-bottom: 24px;
 }
+
+.text4 {
+    font-family: DynaPuff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.text5 {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.text6 {
+    font-family: "IBM Plex Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
 .skillsTable {
     gap: 10px;
     flex-wrap: wrap;
     display: flex;
+}
+
+.experience {
+    max-width: 660px;
+    padding-right: 82px;
+}
+
+.link {
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration-line: underline;
+    margin-bottom: 16px;
+}
+
+.facts {
+    display: flex;
+    gap: 2.3%;
+    flex-wrap: wrap;
+}
+.fact {
+    max-width: 330px;
 }
