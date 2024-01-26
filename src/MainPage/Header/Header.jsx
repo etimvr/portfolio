@@ -1,24 +1,16 @@
-import PropTypes from 'prop-types';
 import classes from './Header.module.css';
+import {Button} from "../../components/Button/Button.jsx";
 
-Header.propTypes = {
-    className: PropTypes.any,
-};
 
-export function Header(props) {
-
-    const {className} = props;
-
+export function Header() {
     return (
-        <div className={className}>
-            <div className={`${classes.header} ${classes.text}`}>
-                <div >ALEKSANDRA S.</div>
-                <div className={classes.rightSide}>
-                    <div>MY WORK</div>
-                    <div>ABOUT</div>
-                    <div>RESUME</div>
-                    <div>CONTACT ME</div>
-                </div>
+        <div className={classes.header}>
+            <div className={classes.text}>ALEKSANDRA S.</div>
+            <div className={classes.rightSide}>
+                <div className={classes.text}>MY WORK</div>
+                <div className={classes.text}>ABOUT</div>
+                <div className={classes.text}>RESUME</div>
+                <Button>CONTACT ME</Button>
             </div>
         </div>
     )

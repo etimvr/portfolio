@@ -1,0 +1,43 @@
+.aboutMe {
+    padding-top: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
+    background-color: #FFFAF6;
+}
+
+.verticalSplit {
+    display: flex;
+}
+
+.picture {
+    padding-right: 90px;
+}
+
+.text1 {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.text2 {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.text3 {
+    font-family: DynaPuff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.skillsTable {
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}

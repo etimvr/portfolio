@@ -1,14 +1,14 @@
 import {Header} from "./Header/Header.jsx";
-import classes from './MainPage.module.css';
 import {Content} from "./Content/Content.jsx";
+import {AboutMe} from "./AboutMe/AboutMe.jsx";
 
 export function MainPage() {
 
     return (
         <>
-            <Header className={classes.header}/>
-            <Content className={classes.mainPage}/>
-            <>Bottom</>
+            <Header/>
+            <Content/>
+            <AboutMe/>
         </>
     )
 }
