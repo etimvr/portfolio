@@ -1,8 +1,14 @@
 .mainPage {
-  background-color: #81B769;
-  padding-top: 195px;
-  padding-bottom: 200px;
-  text-align: center;
+    background-color: #81B769;
+    padding-top: 195px;
+    padding-bottom: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    max-width: 1674px;
 }
 
 .text1 {
@@ -37,26 +43,31 @@
     left: 3%;
     top: 236px;
 }
+
 .flowers {
     position: absolute;
     left: 80.7%;
     top: 373px;
 }
+
 .hearts {
     position: absolute;
     left: 24.4%;
     top: 460px;
 }
+
 .product {
     position: absolute;
     left: 75.2%;
     top: 290px;
 }
+
 .star {
     position: absolute;
     left: 73.2%;
     top: 563px;
 }
+
 .buttons {
     gap: 24px;
     display: inline-flex;

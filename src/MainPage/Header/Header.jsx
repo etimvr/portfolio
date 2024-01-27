@@ -7,12 +7,14 @@ import cv from "../../assets/cv.pdf"
 export function Header() {
     return (
         <div className={classes.header}>
-            <div className={classes.text}>ALEKSANDRA S.</div>
-            <div className={classes.rightSide}>
-                <div className={classes.clickableText}>MY WORK</div>
-                <div className={classes.clickableText} onClick={()=>{scrollToId('about-me')}}>ABOUT</div>
-                <div className={classes.clickableText}><a href={cv} target="_blank" rel="noreferrer" style={{color: "black", textDecoration: "none"}}>RESUME</a></div>
-                <Button>CONTACT ME</Button>
+            <div className={classes.appbar}>
+                <div className={classes.text}>ALEKSANDRA S.</div>
+                <div className={classes.rightSide}>
+                    <div className={classes.clickableText}>MY WORK</div>
+                    <div className={classes.clickableText} onClick={()=>{scrollToId('about-me')}}>ABOUT</div>
+                    <div className={classes.clickableText}><a href={cv} target="_blank" rel="noreferrer" style={{color: "black", textDecoration: "none"}}>RESUME</a></div>
+                    <Button>CONTACT ME</Button>
+                </div>
             </div>
         </div>
     )
