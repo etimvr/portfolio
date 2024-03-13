@@ -9,6 +9,8 @@ import esti from "../../assets/works/esti.png";
 import otherWorks from "../../assets/works/other-works.png";
 import prequel from "../../assets/works/prequel.png";
 import {Tag} from "../../components/Tag/Tag.jsx";
+import {Link} from "react-router-dom";
+import {routes} from "../../routes.js";
 
 export function AboutMe() {
 
@@ -125,7 +127,7 @@ export function AboutMe() {
                 <div style={{marginBottom: 70}}/>
                 <div className={classes.works}>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><img src={esti} alt="esti" width="700" height="450"/></div>
+                        <div className={classes.picture3}><Link to={routes.esti}><img src={esti} alt="esti" width="700" height="450"/></Link></div>
                         <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.text6}>The perfect content creator toolkit: an app with consistent vibes
