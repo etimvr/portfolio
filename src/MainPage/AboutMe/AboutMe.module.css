@@ -7,6 +7,7 @@
 
 .inner {
     max-width: 1437px;
+    /*TODO max-width: 1420px;*/
 }
 
 .verticalSplit {
@@ -19,6 +20,18 @@
 
 .picture2 {
     padding-bottom: 24px;
+}
+
+.picture3 {
+    padding-bottom: 32px;
+}
+
+.header {
+    font-family: DynaPuff;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
 }
 
 .text1 {
@@ -88,6 +101,17 @@
     gap: 2.3%;
     flex-wrap: wrap;
 }
+
 .fact {
     max-width: 330px;
+}
+
+.works {
+    display: flex;
+    gap: 2.3%;
+    flex-wrap: wrap;
+}
+
+.work {
+    max-width: 700px;
 }

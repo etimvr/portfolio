@@ -4,6 +4,10 @@ import goose from "../../assets/goose.png";
 import ramen from "../../assets/ramen.png";
 import bubbleTea from "../../assets/bubble-tea.png";
 import chess from "../../assets/chess.png";
+import admin from "../../assets/works/admin.png";
+import esti from "../../assets/works/esti.png";
+import otherWorks from "../../assets/works/other-works.png";
+import prequel from "../../assets/works/prequel.png";
 import {Tag} from "../../components/Tag/Tag.jsx";
 
 export function AboutMe() {
@@ -11,11 +15,13 @@ export function AboutMe() {
     return (
         <div className={classes.aboutMe} id="about-me">
             <div className={classes.inner}>
+                <div className={classes.header}>ABOUT ME</div>
+                <div style={{marginBottom: 60}}/>
                 <div className={classes.verticalSplit}>
                     <div className={classes.picture1}><img src={portrait} alt="portrait"/></div>
                     <div>
                         <div className={classes.text1}>Hey, I’m Sasha, a senior product and visual designer building
-                            experiences for a Prequel in USA.
+                            experiences for Prequel in USA.
                         </div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.text2}>More than anything, I thrive amidst ambition, passionate
@@ -114,7 +120,48 @@ export function AboutMe() {
                         <div className={classes.text6}>In my free time I’m learning to play chess.</div>
                     </div>
                 </div>
-                <div style={{marginBottom: 32}}/>
+                <div style={{marginBottom: 100}}/>
+                <div className={classes.header}>MY WORK</div>
+                <div style={{marginBottom: 70}}/>
+                <div className={classes.works}>
+                    <div className={classes.work}>
+                        <div className={classes.picture3}><img src={esti} alt="esti" width="700" height="450"/></div>
+                        <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
+                        <div style={{marginBottom: 24}}/>
+                        <div className={classes.text6}>The perfect content creator toolkit: an app with consistent vibes
+                            in mind.
+                        </div>
+                        <div style={{marginBottom: 20}}/>
+                    </div>
+                    <div className={classes.work}>
+                        <div className={classes.picture3}><img src={prequel} alt="prequel" width="700" height="450"/>
+                        </div>
+                        <div className={classes.text3}>Prequel: Photo & Video Editor</div>
+                        <div style={{marginBottom: 24}}/>
+                        <div className={classes.text6}>Photo and video editing app with an easy-to-use creative toolkit,
+                            aesthetic effects and filters.
+                        </div>
+                        <div style={{marginBottom: 20}}/>
+                    </div>
+                    <div className={classes.work}>
+                        <div className={classes.picture3}><img src={admin} alt="admin" width="700" height="450"/></div>
+                        <div className={classes.text3}>Admin Panel / Web</div>
+                        <div style={{marginBottom: 24}}/>
+                        <div className={classes.text6}>Admin service for internal use by developers, QA engineers and
+                            content creators.
+                        </div>
+                    </div>
+                    <div className={classes.work}>
+                        <div className={classes.picture3}><img src={otherWorks} alt="other-works" width="700"
+                                                               height="450"/></div>
+                        <div className={classes.text3}>Other works...</div>
+                        <div style={{marginBottom: 24}}/>
+                        <div className={classes.text6}>Here is a collection of various projects on different themes for
+                            the soul and more. ✨
+                        </div>
+                    </div>
+                </div>
+                <div style={{marginBottom: 100}}/>
             </div>
 
         </div>
