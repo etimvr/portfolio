@@ -7,6 +7,7 @@ import star from "../../assets/star.svg";
 import arrowUp from "../../assets/arrow-up.svg";
 import smile from "../../assets/smile.svg";
 import {Button} from "../../components/Button/Button.jsx";
+import {scrollToId} from "../../helpers.js";
 
 
 export function Content() {
@@ -25,7 +26,7 @@ export function Content() {
                     <div>I craft inclusive, human-centred experiences, all tailored to your organization’s needs.</div>
                 </div>
                 <div className={classes.buttons}>
-                    <Button icon={arrowUp}>MY WORK</Button>
+                    <Button icon={arrowUp} onClick={()=>{scrollToId('my-work')}}>MY WORK</Button>
                     <Button icon={smile}>CONTACT ME</Button>
                 </div>
 

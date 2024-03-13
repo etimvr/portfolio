@@ -15,9 +15,9 @@ import {routes} from "../../routes.js";
 export function AboutMe() {
 
     return (
-        <div className={classes.aboutMe} id="about-me">
+        <div className={classes.aboutMe}>
             <div className={classes.inner}>
-                <div className={classes.header}>ABOUT ME</div>
+                <div className={classes.header} id="about-me">ABOUT ME</div>
                 <div style={{marginBottom: 60}}/>
                 <div className={classes.verticalSplit}>
                     <div className={classes.picture1}><img src={portrait} alt="portrait"/></div>
@@ -123,11 +123,12 @@ export function AboutMe() {
                     </div>
                 </div>
                 <div style={{marginBottom: 100}}/>
-                <div className={classes.header}>MY WORK</div>
+                <div className={classes.header} id="my-work">MY WORK</div>
                 <div style={{marginBottom: 70}}/>
                 <div className={classes.works}>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.esti}><img src={esti} alt="esti" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3}><Link to={routes.esti}><img src={esti} alt="esti" width="700"
+                                                                                      height="450"/></Link></div>
                         <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.text6}>The perfect content creator toolkit: an app with consistent vibes
