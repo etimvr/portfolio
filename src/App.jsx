@@ -12,6 +12,7 @@ function App() {
             <Routes>
                 <Route path={routes.main} element={<MainPage/>}/>
                 <Route path={routes.esti} element={<Esti/>}/>
+                <Route path='*' element={<div>404</div>}/>
             </Routes>
             <Footer/>
         </>
