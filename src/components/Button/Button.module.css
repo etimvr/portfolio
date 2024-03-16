@@ -7,6 +7,7 @@
     background-color: white;
     display: flex;
     cursor: pointer;
+    width: fit-content;
 }
 
 .text {
