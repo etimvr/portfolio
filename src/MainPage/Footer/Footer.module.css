@@ -1,5 +1,6 @@
 .footer {
     background-color: #81B769;
+/*    TODO change color in not main page*/
 }
 
 .inner {
@@ -8,6 +9,11 @@
     margin-right: auto;
     padding-top: 192px;
     padding-bottom: 162px;
+}
+
+.flower {
+    position: absolute;
+    left: 42.6%;
 }
 
 .text1 {

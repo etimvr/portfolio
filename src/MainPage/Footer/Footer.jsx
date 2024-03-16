@@ -1,9 +1,12 @@
 import classes from "../Footer/Footer.module.css";
+import flower from "../../assets/footer-flower.svg";
 
 export function Footer() {
     return (
         <div className={classes.footer}>
             <div className={classes.inner}>
+                <div className={classes.flower}><img src={flower} alt="footer-flower"/></div>
+                {/*todo move flower a bit higher*/}
                 <div className={classes.text1}>Get in Touch</div>
                 <div style={{marginBottom: 48}}/>
                 <div style={{display: 'flex'}}>
