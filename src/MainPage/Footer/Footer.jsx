@@ -1,9 +1,14 @@
 import classes from "../Footer/Footer.module.css";
 import flower from "../../assets/footer-flower.svg";
+import PropTypes from "prop-types";
 
-export function Footer() {
+Footer.propTypes = {
+    color: PropTypes.string,
+};
+export function Footer(props) {
+    const {color} = props;
     return (
-        <div className={classes.footer}>
+        <div style={{backgroundColor: color}}>
             <div className={classes.inner}>
                 <div className={classes.flower}><img src={flower} alt="footer-flower"/></div>
                 {/*todo move flower a bit higher*/}

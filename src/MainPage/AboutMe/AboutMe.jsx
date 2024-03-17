@@ -22,8 +22,7 @@ export function AboutMe() {
                 <div className={classes.verticalSplit}>
                     <div className={classes.picture1}><img src={portrait} alt="portrait"/></div>
                     <div>
-                        <div className={classes.text1}>Hey, I’m Sasha, a senior product and visual designer building
-                            experiences for Prequel in USA.
+                        <div className={classes.text1}>Hey, I’m Sasha, a Senior Product and Visual Designer building experiences for Prequel in USA.
                         </div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.text2}>More than anything, I thrive amidst ambition, passionate
@@ -130,7 +129,7 @@ export function AboutMe() {
                         <div className={classes.picture3}><Link to={routes.esti}><img src={esti} alt="esti" width="700"
                                                                                       height="450"/></Link></div>
                         <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
-                        <div style={{marginBottom: 24}}/>
+                        <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>The perfect content creator toolkit: an app with consistent vibes
                             in mind.
                         </div>
@@ -140,7 +139,7 @@ export function AboutMe() {
                         <div className={classes.picture3}><img src={prequel} alt="prequel" width="700" height="450"/>
                         </div>
                         <div className={classes.text3}>Prequel: Photo & Video Editor</div>
-                        <div style={{marginBottom: 24}}/>
+                        <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Photo and video editing app with an easy-to-use creative toolkit,
                             aesthetic effects and filters.
                         </div>
@@ -149,7 +148,7 @@ export function AboutMe() {
                     <div className={classes.work}>
                         <div className={classes.picture3}><img src={admin} alt="admin" width="700" height="450"/></div>
                         <div className={classes.text3}>Admin Panel / Web</div>
-                        <div style={{marginBottom: 24}}/>
+                        <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Admin service for internal use by developers, QA engineers and
                             content creators.
                         </div>
@@ -158,7 +157,7 @@ export function AboutMe() {
                         <div className={classes.picture3}><img src={otherWorks} alt="other-works" width="700"
                                                                height="450"/></div>
                         <div className={classes.text3}>Other works...</div>
-                        <div style={{marginBottom: 24}}/>
+                        <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Here is a collection of various projects on different themes for
                             the soul and more. ✨
                         </div>

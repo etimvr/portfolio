@@ -2,11 +2,15 @@ import classes from './Header.module.css';
 import {Button} from "../../components/Button/Button.jsx";
 import {scrollToId} from "../../helpers.js";
 import cv from "../../assets/cv.pdf"
+import PropTypes from "prop-types";
 
-
-export function Header() {
+Header.propTypes = {
+    color: PropTypes.string,
+};
+export function Header(props) {
+    const {color} = props;
     return (
-        <div className={classes.header} id="header">
+        <div className={classes.header} style={{backgroundColor: color}} id="header">
             <div className={classes.appbar}>
                 <div className={classes.text}>ALEKSANDRA S.</div>
                 <div className={classes.rightSide}>

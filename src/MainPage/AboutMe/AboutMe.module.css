@@ -6,8 +6,7 @@
 }
 
 .inner {
-    max-width: 1437px;
-    /*TODO max-width: 1420px;*/
+    max-width: 1420px;
 }
 
 .verticalSplit {
@@ -108,7 +107,7 @@
 
 .works {
     display: flex;
-    gap: 2.3%; /*todo not needed here?*/
+    gap: 20px;
     flex-wrap: wrap;
 }
 
