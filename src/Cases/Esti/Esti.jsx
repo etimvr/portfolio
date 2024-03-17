@@ -9,22 +9,44 @@ import lauren from "../../assets/esti/lauren.png";
 import massiel from "../../assets/esti/massiel.png";
 import chart1 from "../../assets/esti/chart1.png";
 import chart2 from "../../assets/esti/chart2.png";
+import screen1 from "../../assets/esti/screen1.png";
+import screen2 from "../../assets/esti/screen2.png";
+import screen3 from "../../assets/esti/screen3.png";
+import screen4 from "../../assets/esti/screen4.png";
+import screen5 from "../../assets/esti/screen5.png";
+import screen6 from "../../assets/esti/screen6.png";
 import summary from "../../assets/esti/summary.png";
+import heart from "../../assets/esti/heart.svg";
+import heart2 from "../../assets/esti/heart2.svg";
+import heart3 from "../../assets/esti/heart3.svg";
+import heart4 from "../../assets/esti/heart4.svg";
+import heart5 from "../../assets/esti/heart5.svg";
+import arrow from "../../assets/esti/arrow.svg";
+import arrow2 from "../../assets/esti/arrow2.svg";
+import arrow3 from "../../assets/esti/arrow3.svg";
+import stars from "../../assets/esti/stars.svg";
+import star from "../../assets/esti/star.svg";
+import star2 from "../../assets/esti/star2.svg";
+import star3 from "../../assets/esti/star3.svg";
+import weirdThing from "../../assets/esti/weird-thing.svg";
 import {Button} from "../../components/Button/Button.jsx";
 import arrowUp from "../../assets/arrow-up.svg";
-import {scrollToId} from "../../helpers.js";
 import {Header} from "../../MainPage/Header/Header.jsx";
 import {Footer} from "../../MainPage/Footer/Footer.jsx";
 import {colors} from "../../colors.js";
+import {useNavigate} from "react-router-dom";
+import {routes} from "../../routes.js";
 
 export function Esti() {
+    const navigate = useNavigate();
 
     return (
         <>
-            <Header color={colors.white}/>
+            <Header color={colors.milkWhite}/>
             <div className={classes.page}>
                 <div className={classes.inner}>
-                    <div className={classes.text1}>Esti: Aesthetic Photo Editor</div>
+                    <div style={{position: 'absolute', left: '79.3%'}}><img src={stars} alt="stars"/></div>
+                    <div className={classes.text1} style={{zIndex: 2, position: 'relative'}}>Esti: Aesthetic Photo Editor</div>
                     <div style={{marginBottom: 12}}/>
                     <div className={classes.text2} style={{textAlign: "center"}}>The perfect content creator toolkit: an
                         app
@@ -32,7 +54,7 @@ export function Esti() {
                         mind.
                     </div>
                     <div style={{marginBottom: 32}}/>
-                    <div><img src={intro} alt="intro"/></div>
+                    <div><img src={intro} alt="intro" width={1420}/></div>
                     <div style={{marginBottom: 79}}/>
                     <div className={classes.columns}>
                         <div>
@@ -90,18 +112,21 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 148}}/>
-                    <div className={classes.text3}>Quick look at Esti</div>
+                    <div style={{position: 'absolute', left: '37.8%', marginTop: '-40px'}}><img src={heart} alt="heart"/></div>
+                    <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Quick look at Esti</div>
                     <div style={{marginBottom: 42}}/>
                     <div><img src={temp} alt="temp"/></div>
                     {/*todo make properly later*/}
                     <div style={{marginBottom: 100}}/>
-                    <div className={classes.text3}>One of the most challenging and innovative projects for Esti was
+                    <div style={{position: 'absolute', left: '10.8%', marginTop: '40px'}}><img src={star} alt="star"/></div>
+                    <div className={classes.text3} style={{maxWidth: 1274,zIndex: 2, position: 'relative'}}>One of the most challenging and innovative
+                        projects for Esti was
                         Planner
                     </div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.columns}>
                         <div>
-                            <div className={classes.text3}>
+                            <div className={classes.text7}>
                                 Problems
                             </div>
                             <div style={{marginBottom: 32}}/>
@@ -114,7 +139,8 @@ export function Esti() {
                             </div>
                         </div>
                         <div>
-                            <div className={classes.text3}>
+                            <div style={{position: 'absolute', marginLeft: '60px', marginTop: '-20px'}}><img src={star2} alt="star2"/></div>
+                            <div className={classes.text7} style={{zIndex: 2, position: 'relative'}}>
                                 Goals
                             </div>
                             <div style={{marginBottom: 32}}/>
@@ -144,7 +170,8 @@ export function Esti() {
                         media pretty often. This insight worked as a validation for our new feature.
                     </div>
                     <div style={{marginBottom: 100}}/>
-                    <div className={classes.text3}>Some simple sketches...</div>
+                    <div style={{position: 'absolute', marginLeft: '-30px', marginTop: '-10px'}}><img src={weirdThing} alt="weird-thing"/></div>
+                    <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Some simple sketches...</div>
                     <div style={{marginBottom: 32}}/>
                     <div className={classes.text2}>After conducting research, I decided to try sketching a few simple
                         drafts
@@ -184,6 +211,7 @@ export function Esti() {
                             </div>
                         </div>
                     </div>
+                    <div style={{position: 'absolute', left: '0', right: '0', textAlign: 'center', marginTop: '-85px'}}><img src={arrow} alt="arrow"/></div>
                     <div style={{marginBottom: 64}}/>
                     <div style={{textAlign: "center"}}><img src={research} alt="research"/></div>
                     <div style={{marginBottom: 16}}/>
@@ -193,6 +221,7 @@ export function Esti() {
                     {/*todo add link later ^*/}
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.text3}>Shortlist of the questions</div>
+                    <div style={{position: 'absolute', marginLeft: '1125px', marginTop: '-40px'}}><img src={arrow2} alt="arrow2"/></div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
                         <div className={classes.text2}>What are your thoughts on having a planner features in the photo
@@ -207,20 +236,75 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.text6}>Esti user personas</div>
+                    <div style={{position: 'absolute', left: '39.7%', marginTop: '-20px'}}><img src={heart2} alt="heart2"/></div>
+                    <div className={classes.text6} style={{zIndex: 2, position: 'relative'}}>Esti user personas</div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
                         <div className={classes.personaBox}>
                             <div><img src={jackie} alt="jackie"/></div>
-                            <div className={classes.text6}>Jackie, 35 y.o., Austin, CA, USA</div>
+                            <div>
+                                <div className={classes.text7}>Jackie, 35 y.o., Austin, CA, USA</div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Degree:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>MSc in Business Administration</div>
+                                </div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Socials:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>Instagram, Facebook, TikTok rarely
+                                    </div>
+                                </div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2}>Experience in Editing:</div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{fontWeight: 400}}>Lightroom (buy presets on Etsy
+                                    to make IG page look in a certain way), Facetune (only when I don’t look cute),
+                                    Videoleap (all Reels), Vixer (fonts), Lapse (vintage looks).
+                                </div>
+                            </div>
                         </div>
                         <div className={classes.personaBox}>
                             <div><img src={lauren} alt="lauren"/></div>
-                            <div className={classes.text6}>Lauren, 29 y.o., Los Angeles, CA, USA</div>
+                            <div>
+                                <div className={classes.text7}>Lauren, 29 y.o., Los Angeles, CA, USA</div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Degree:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>Berkeley, Digital Media</div>
+                                </div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Socials:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>Instagram, Facebook, Lemon8
+                                        recently
+                                    </div>
+                                </div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2}>Experience in Editing:</div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{fontWeight: 400}}>VSCO (almost same concept as
+                                    Esti, but I like Esti more, cuz of Retro looks), Lightroom Presets (cuz my
+                                    photographers friends use it).
+                                </div>
+                            </div>
                         </div>
                         <div className={classes.personaBox}>
                             <div><img src={massiel} alt="massiel"/></div>
-                            <div className={classes.text6}>Massiel, 30 y.o., San Francisco, CA, USA</div>
+                            <div>
+                                <div className={classes.text7}>Massiel, 30 y.o., San Francisco, CA, USA</div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Degree:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>Tradional Chinese Medicine student
+                                    </div>
+                                </div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{display: 'flex'}}>Socials:
+                                    <div style={{fontWeight: 400, marginLeft: 12}}>Instagram, TikTok</div>
+                                </div>
+                                <div style={{marginBottom: 24}}/>
+                                <div className={classes.text2}>Experience in Editing:</div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text2} style={{fontWeight: 400}}>I never feel I have one app I
+                                    can commit. I usually move from one to other. Videoleap - most consistent.
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
@@ -245,20 +329,25 @@ export function Esti() {
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>A few other insights...</div>
                     <div style={{marginBottom: 42}}/>
-                    <div className={classes.columns}>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                <div className={classes.text2}>Onboarding videos were too vague...</div>
+                    <div className={classes.columns} style={{gap: 20, flexWrap: 'wrap'}}>
+                        <div className={classes.box2} style={{textAlign: 'center', backgroundColor: colors.lightGreen}}>
+                            <div className={classes.text6} style={{color: colors.white}}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2} style={{color: colors.white}}>Onboarding videos were too
+                                vague...
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                <div className={classes.text2}>I don't understand an icon in the app's library.</div>
-                            </div>
+                        <div className={classes.box2}
+                             style={{textAlign: 'center', backgroundColor: colors.lightLightGreen}}>
+                            <div className={classes.text6}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2}>I don't understand an icon in the app's library.</div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                <div className={classes.text2}>I wish I knew about batch editing feature sooner!</div>
+                        <div className={classes.box2} style={{textAlign: 'center', backgroundColor: colors.lightGreen}}>
+                            <div className={classes.text6} style={{color: colors.white}}>5/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2} style={{color: colors.white}}>I wish I knew about batch
+                                editing feature sooner!
                             </div>
                         </div>
                     </div>
@@ -287,23 +376,23 @@ export function Esti() {
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.text6}>Planner Zero Screen</div>
                     <div style={{marginBottom: 42}}/>
-                    {/*    box*/}
+                    <div><img src={screen1} alt="screen1" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Entry Point</div>
                     <div style={{marginBottom: 42}}/>
-                    {/*    box*/}
+                    <div><img src={screen2} alt="screen2" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Planner Screen</div>
                     <div style={{marginBottom: 42}}/>
-                    {/*    box*/}
+                    <div><img src={screen3} alt="screen3" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Context Menu</div>
                     <div style={{marginBottom: 42}}/>
-                    {/*    box*/}
+                    <div><img src={screen4} alt="screen4" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Quick Edit</div>
                     <div style={{marginBottom: 42}}/>
-                    {/*    box*/}
+                    <div><img src={screen5} alt="screen5" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Redesigning Onboarding</div>
                     <div style={{marginBottom: 32}}/>
@@ -312,52 +401,58 @@ export function Esti() {
                         Therefore, I redesigned it to make the content simpler, more aesthetic, and understandable.
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.columns}>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                I didn't like the second onboarding screen. It has too much specific information, and
-                                the
-                                animation is very fast.
+                    <div className={classes.columns} style={{gap: 20, flexWrap: 'wrap'}}>
+                        <div className={classes.box2} style={{textAlign: 'center', backgroundColor: colors.lightGreen}}>
+                            <div className={classes.text6} style={{color: colors.white}}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2} style={{color: colors.white}}>I didn't like the second
+                                onboarding screen. It has too much specific information, and the animation is very fast.
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                I think the second onboarding screen shows B/A. I didn't notice that there are 4
-                                variations
-                                of the photo.
+                        <div className={classes.box2}
+                             style={{textAlign: 'center', backgroundColor: colors.lightLightGreen}}>
+                            <div className={classes.text6}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2}>I think the second onboarding screen shows B/A. I didn't
+                                notice that there are 4 variations of the photo.
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                It took me about a minute to understand the meaning of the third onboarding screen.
+                        <div className={classes.box2} style={{textAlign: 'center', backgroundColor: colors.lightGreen}}>
+                            <div className={classes.text6} style={{color: colors.white}}>5/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2} style={{color: colors.white}}>It took me about a minute to
+                                understand the meaning of the third onboarding screen.
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                I thought the third onboarding screen was not only about Copy/Paste presets but also
-                                about
-                                planning the IG grid.
+                        <div className={classes.box2}
+                             style={{textAlign: 'center', backgroundColor: colors.lightLightGreen}}>
+                            <div className={classes.text6}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2}>I thought the third onboarding screen was not only about
+                                Copy/Paste presets but also about planning the IG grid.
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                I didn't like the image after opening the application; it looks like a stock photo
-                                compared
-                                to the previous ones.
+                        <div className={classes.box2} style={{textAlign: 'center', backgroundColor: colors.lightGreen}}>
+                            <div className={classes.text6} style={{color: colors.white}}>2/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2} style={{color: colors.white}}>I didn't like the image after
+                                opening the application; it looks like a stock photo compared to the previous ones.
                             </div>
                         </div>
-                        <div className={classes.item2}>
-                            <div className={classes.box}>
-                                On the third onboarding screen, make it 6 photos instead of 5; the empty space is a bit
-                                annoying.
+                        <div className={classes.box2}
+                             style={{textAlign: 'center', backgroundColor: colors.lightLightGreen}}>
+                            <div className={classes.text6}>1/5</div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text2}>On the third onboarding screen, make it 6 photos instead of
+                                5; the empty space is a bit annoying.
                             </div>
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    {/*    box*/}
+                    <div><img src={screen6} alt="screen6" width={1420}/></div>
                     <div style={{marginBottom: 100}}/>
                     <div style={{justifyContent: "center", display: "flex"}}><Button icon={arrowUp} onClick={() => {
-                        scrollToId('my-work')
+                        navigate(routes.prequel);
                     }}>NEXT CASE</Button></div>
                     <div style={{marginBottom: 100}}/>
                 </div>

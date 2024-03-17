@@ -9,6 +9,9 @@ function App() {
             <Routes>
                 <Route path={routes.main} element={<MainPage/>}/>
                 <Route path={routes.esti} element={<Esti/>}/>
+                <Route path={routes.prequel} element={<></>}/>
+                <Route path={routes.adminPanel} element={<></>}/>
+                <Route path={routes.otherWorks} element={<></>}/>
                 <Route path='*' element={<div>404</div>}/>
             </Routes>
         </>
