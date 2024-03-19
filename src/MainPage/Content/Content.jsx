@@ -23,7 +23,7 @@ export function Content() {
                 <div className={classes.text2}>CURIOUS DESIGNER, STORYTELLER, DIGITAL CREATOR</div>
                 <div className={classes.text3}>
                     <div>blending tech, art and community, my focus goes beyond beautiful interfaces.</div>
-                    <div>I craft inclusive, human-centred experiences, all tailored to your organization’s needs.</div>
+                    <div>I craft inclusive, human-centred experiences, all tailored to your company’s needs.</div>
                 </div>
                 <div className={classes.buttons}>
                     <Button icon={arrowUp} onClick={()=>{scrollToId('my-work')}}>MY WORK</Button>

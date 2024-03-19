@@ -40,32 +40,32 @@
 
 .cloud {
     position: absolute;
-    left: 3%;
-    top: 236px;
+    right: calc(50% + 554px);
+    top: 263px;
 }
 
 .flowers {
     position: absolute;
-    left: 80.7%;
-    top: 373px;
+    left: calc(50% + 590px);
+    top: 400px;
 }
 
 .hearts {
     position: absolute;
-    left: 24.4%;
-    top: 460px;
+    right: calc(50% + 358px);
+    top: 490px;
 }
 
 .product {
     position: absolute;
-    left: 75.2%;
-    top: 290px;
+    left: calc(50% + 484px);
+    top: 315px;
 }
 
 .star {
     position: absolute;
-    left: 73.2%;
-    top: 563px;
+    left: calc(50% + 447px);
+    top: 605px;
 }
 
 .buttons {

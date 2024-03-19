@@ -102,13 +102,8 @@ export function Esti() {
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.box}>
                         <div className={classes.text3}>What I did?</div>
-                        <div className={classes.text2}>On this project I worked as a product designer, handling various
-                            tasks including UX & UI
-                            design, prototyping, user interview, research and usability testing. This role demanded
-                            adaptability as I explored different aspects of product development.<br/><br/>
-                            I collaborated with founders, product managers, marketing team, research team, development
-                            and
-                            analytics team.
+                        <div className={classes.text2}>On this project I worked as a product designer, handling various tasks including UX & UI design, prototyping, user interviewing, research and usability testing. This role demanded adaptability as I explored different aspects of product development.<br/><br/>
+                            I collaborated with founders, product managers, marketing team, research team, development and analytics team.
                         </div>
                     </div>
                     <div style={{marginBottom: 148}}/>
