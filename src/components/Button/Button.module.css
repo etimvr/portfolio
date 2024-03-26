@@ -2,14 +2,46 @@
     padding: 12px 18px;
     border-radius: 12px;
     border: 2px solid;
-    box-shadow: 0px 2px 0px 0px #141414, 2px 2px 0px 0px #262626;
+    box-shadow: 0 2px 0 0 #141414, 2px 2px 0 0 #262626;
     gap: 10px;
     background-color: white;
     display: flex;
     cursor: pointer;
     width: fit-content;
+    position: relative;
+    overflow: hidden; /* Ensures the expanding circle stays within button boundaries */
 }
 
+.button::after {
+  content: '';
+  position: absolute;
+  background-color: #FAA57B;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.button:hover::after {
+  opacity: 1;
+  z-index: 0;
+  animation: expandCircle 3s ease-out forwards; /* Animation to expand the circle */
+}
+
+.button:active {
+    box-shadow: 4px 4px 0 0 #262626, 4px 4px 0 0 #262626, 2px 2px 0 0 #262626, 0 2px 0 0 #262626;
+}
+
+@keyframes expandCircle {
+  0% {
+    transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
+  }
+  100% {
+        transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
+  }
+}
 .text {
     font-family: "IBM Plex Mono";
     font-size: 20px;

@@ -13,8 +13,8 @@ export function Button(props) {
 
     return (
         <div className={classes.button} onClick={onClick}>
-            <div className={classes.text} >{children}</div>
-            {icon && <img src={icon} alt="cta-icon" width="24" height="24"/>}
+            <div className={classes.text} style={{zIndex: 1}}>{children}</div>
+            {icon && <img src={icon} style={{zIndex: 1}} alt="cta-icon" width="24" height="24"/>}
         </div>
     )
 }
