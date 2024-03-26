@@ -135,3 +135,32 @@
     align-items: flex-start;
     gap: 17px;
 }
+
+.outer {
+    width: 1420px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 670px;
+    display: flex;
+    width: fit-content;
+    gap: 60px;
+    animation: 30s bannermove infinite linear;
+}
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 30px)); /*30px is half of 60px gap to make transformation smoother*/
+    }
+}
+

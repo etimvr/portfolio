@@ -1,7 +1,6 @@
 import classes from "../../Cases/Esti/Esti.module.css";
 import intro from "../../assets/esti/intro.png";
 import whatWeDidFirst from "../../assets/esti/what-we-did-first.png";
-import temp from "../../assets/esti/temp.png";
 import sketches from "../../assets/esti/sketches.png";
 import research from "../../assets/esti/research.png";
 import jackie from "../../assets/esti/jackie.png";
@@ -36,6 +35,7 @@ import {Footer} from "../../MainPage/Footer/Footer.jsx";
 import {colors} from "../../colors.js";
 import {useNavigate} from "react-router-dom";
 import {routes} from "../../routes.js";
+import images from "./images.jsx";
 
 export function Esti() {
     const navigate = useNavigate();
@@ -46,7 +46,9 @@ export function Esti() {
             <div className={classes.page}>
                 <div className={classes.inner}>
                     <div style={{position: 'absolute', left: '79.3%'}}><img src={stars} alt="stars"/></div>
-                    <div className={classes.text1} style={{zIndex: 2, position: 'relative'}}>Esti: Aesthetic Photo Editor</div>
+                    <div className={classes.text1} style={{zIndex: 2, position: 'relative'}}>Esti: Aesthetic Photo
+                        Editor
+                    </div>
                     <div style={{marginBottom: 12}}/>
                     <div className={classes.text2} style={{textAlign: "center"}}>The perfect content creator toolkit: an
                         app
@@ -102,19 +104,33 @@ export function Esti() {
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.box}>
                         <div className={classes.text3}>What I did?</div>
-                        <div className={classes.text2}>On this project I worked as a product designer, handling various tasks including UX & UI design, prototyping, user interviewing, research and usability testing. This role demanded adaptability as I explored different aspects of product development.<br/><br/>
-                            I collaborated with founders, product managers, marketing team, research team, development and analytics team.
+                        <div className={classes.text2}>On this project I worked as a product designer, handling various
+                            tasks including UX & UI design, prototyping, user interviewing, research and usability
+                            testing. This role demanded adaptability as I explored different aspects of product
+                            development.<br/><br/>
+                            I collaborated with founders, product managers, marketing team, research team, development
+                            and analytics team.
                         </div>
                     </div>
                     <div style={{marginBottom: 148}}/>
-                    <div style={{position: 'absolute', left: '37.8%', marginTop: '-40px'}}><img src={heart} alt="heart"/></div>
+                    <div style={{position: 'absolute', left: '37.8%', marginTop: '-40px'}}><img src={heart}
+                                                                                                alt="heart"/></div>
                     <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Quick look at Esti</div>
-                    <div style={{marginBottom: 42}}/>
-                    <div><img src={temp} alt="temp"/></div>
-                    {/*todo make properly later*/}
+                    <div style={{marginBottom: 64}}/>
+                    <div className={classes.outer}>
+                        <div className={classes.carousel}>
+                            {images.map((image, index) => <img src={image} key={index}
+                                                               alt={`Carousel ${index}`}></img>)}
+                            {/*duplicate is needed for smooth transition*/}
+                            {images.map((image, index) => <img src={image} key={index}
+                                                               alt={`Carousel ${index}`}></img>)}
+                        </div>
+                    </div>
                     <div style={{marginBottom: 100}}/>
-                    <div style={{position: 'absolute', left: '10.8%', marginTop: '40px'}}><img src={star} alt="star"/></div>
-                    <div className={classes.text3} style={{maxWidth: 1274,zIndex: 2, position: 'relative'}}>One of the most challenging and innovative
+                    <div style={{position: 'absolute', left: '10.8%', marginTop: '40px'}}><img src={star} alt="star"/>
+                    </div>
+                    <div className={classes.text3} style={{maxWidth: 1274, zIndex: 2, position: 'relative'}}>One of the
+                        most challenging and innovative
                         projects for Esti was
                         Planner
                     </div>
@@ -134,7 +150,9 @@ export function Esti() {
                             </div>
                         </div>
                         <div>
-                            <div style={{position: 'absolute', marginLeft: '60px', marginTop: '-20px'}}><img src={star2} alt="star2"/></div>
+                            <div style={{position: 'absolute', marginLeft: '60px', marginTop: '-20px'}}><img src={star2}
+                                                                                                             alt="star2"/>
+                            </div>
                             <div className={classes.text7} style={{zIndex: 2, position: 'relative'}}>
                                 Goals
                             </div>
@@ -165,8 +183,11 @@ export function Esti() {
                         media pretty often. This insight worked as a validation for our new feature.
                     </div>
                     <div style={{marginBottom: 100}}/>
-                    <div style={{position: 'absolute', marginLeft: '-30px', marginTop: '-10px'}}><img src={weirdThing} alt="weird-thing"/></div>
-                    <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Some simple sketches...</div>
+                    <div style={{position: 'absolute', marginLeft: '-30px', marginTop: '-10px'}}><img src={weirdThing}
+                                                                                                      alt="weird-thing"/>
+                    </div>
+                    <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Some simple sketches...
+                    </div>
                     <div style={{marginBottom: 32}}/>
                     <div className={classes.text2}>After conducting research, I decided to try sketching a few simple
                         drafts
@@ -206,7 +227,8 @@ export function Esti() {
                             </div>
                         </div>
                     </div>
-                    <div style={{position: 'absolute', left: '0', right: '0', textAlign: 'center', marginTop: '-85px'}}><img src={arrow} alt="arrow"/></div>
+                    <div style={{position: 'absolute', left: '0', right: '0', textAlign: 'center', marginTop: '-85px'}}>
+                        <img src={arrow} alt="arrow"/></div>
                     <div style={{marginBottom: 64}}/>
                     <div style={{textAlign: "center"}}><img src={research} alt="research"/></div>
                     <div style={{marginBottom: 16}}/>
@@ -216,7 +238,9 @@ export function Esti() {
                     {/*todo add link later ^*/}
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.text3}>Shortlist of the questions</div>
-                    <div style={{position: 'absolute', marginLeft: '1125px', marginTop: '-40px'}}><img src={arrow2} alt="arrow2"/></div>
+                    <div style={{position: 'absolute', marginLeft: '1125px', marginTop: '-40px'}}><img src={arrow2}
+                                                                                                       alt="arrow2"/>
+                    </div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
                         <div className={classes.text2}>What are your thoughts on having a planner features in the photo
@@ -231,7 +255,8 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div style={{position: 'absolute', left: '39.7%', marginTop: '-20px'}}><img src={heart2} alt="heart2"/></div>
+                    <div style={{position: 'absolute', left: '39.7%', marginTop: '-20px'}}><img src={heart2}
+                                                                                                alt="heart2"/></div>
                     <div className={classes.text6} style={{zIndex: 2, position: 'relative'}}>Esti user personas</div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
