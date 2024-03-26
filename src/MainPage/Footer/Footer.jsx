@@ -1,5 +1,5 @@
 import classes from "../Footer/Footer.module.css";
-import flower from "../../assets/footer-flower.svg";
+import flower from "../../assets/footer/footer-flower.svg";
 import PropTypes from "prop-types";
 
 Footer.propTypes = {

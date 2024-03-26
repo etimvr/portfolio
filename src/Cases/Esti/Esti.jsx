@@ -29,7 +29,7 @@ import star2 from "../../assets/esti/star2.svg";
 import star3 from "../../assets/esti/star3.svg";
 import weirdThing from "../../assets/esti/weird-thing.svg";
 import {Button} from "../../components/Button/Button.jsx";
-import arrowUp from "../../assets/arrow-up.svg";
+import arrowUp from "../../assets/common/arrow-up.svg";
 import {Header} from "../../MainPage/Header/Header.jsx";
 import {Footer} from "../../MainPage/Footer/Footer.jsx";
 import {colors} from "../../colors.js";

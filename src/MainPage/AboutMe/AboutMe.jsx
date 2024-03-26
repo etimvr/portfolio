@@ -1,9 +1,9 @@
 import classes from './AboutMe.module.css';
-import portrait from "../../assets/portrait.png";
-import goose from "../../assets/goose.png";
-import ramen from "../../assets/ramen.png";
-import bubbleTea from "../../assets/bubble-tea.png";
-import chess from "../../assets/chess.png";
+import portrait from "../../assets/main/portrait.png";
+import goose from "../../assets/main/goose.png";
+import ramen from "../../assets/main/ramen.png";
+import bubbleTea from "../../assets/main/bubble-tea.png";
+import chess from "../../assets/main/chess.png";
 import admin from "../../assets/works/admin.png";
 import esti from "../../assets/works/esti.png";
 import otherWorks from "../../assets/works/other-works.png";
@@ -22,7 +22,8 @@ export function AboutMe() {
                 <div className={classes.verticalSplit}>
                     <div className={classes.picture1}><img src={portrait} alt="portrait"/></div>
                     <div>
-                        <div className={classes.text1}>Hey, I’m Sasha, a Senior Product and Visual Designer building experiences for Prequel in USA.
+                        <div className={classes.text1}>Hey, I’m Sasha, a Senior Product and Visual Designer building
+                            experiences for Prequel in USA.
                         </div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.text2}>More than anything, I thrive amidst ambition, passionate
@@ -126,7 +127,12 @@ export function AboutMe() {
                 <div style={{marginBottom: 70}}/>
                 <div className={classes.works}>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.esti} onClick={()=>window.scrollTo(0, 0)}><img src={esti} alt="esti" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3}><Link to={routes.esti}
+                                                                onClick={() => window.scrollTo(0, 0)}><img src={esti}
+                                                                                                           alt="esti"
+                                                                                                           width="700"
+                                                                                                           height="450"/></Link>
+                        </div>
                         <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
                         <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>The perfect content creator toolkit: an app with consistent vibes
@@ -135,7 +141,12 @@ export function AboutMe() {
                         <div style={{marginBottom: 20}}/>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.prequel} onClick={()=>window.scrollTo(0, 0)}><img src={prequel} alt="prequel" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3}><Link to={routes.prequel}
+                                                                onClick={() => window.scrollTo(0, 0)}><img src={prequel}
+                                                                                                           alt="prequel"
+                                                                                                           width="700"
+                                                                                                           height="450"/></Link>
+                        </div>
                         <div className={classes.text3}>Prequel: Photo & Video Editor</div>
                         <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Photo and video editing app with an easy-to-use creative toolkit,
@@ -144,7 +155,12 @@ export function AboutMe() {
                         <div style={{marginBottom: 20}}/>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.adminPanel} onClick={()=>window.scrollTo(0, 0)}><img src={admin} alt="admin" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3}><Link to={routes.adminPanel}
+                                                                onClick={() => window.scrollTo(0, 0)}><img src={admin}
+                                                                                                           alt="admin"
+                                                                                                           width="700"
+                                                                                                           height="450"/></Link>
+                        </div>
                         <div className={classes.text3}>Admin Panel / Web</div>
                         <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Admin service for internal use by developers, QA engineers and
@@ -152,7 +168,9 @@ export function AboutMe() {
                         </div>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.otherWorks} onClick={()=>window.scrollTo(0, 0)}><img src={otherWorks} alt="other-works" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3}><Link to={routes.otherWorks}
+                                                                onClick={() => window.scrollTo(0, 0)}><img
+                            src={otherWorks} alt="other-works" width="700" height="450"/></Link></div>
                         <div className={classes.text3}>Other works...</div>
                         <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Here is a collection of various projects on different themes for
