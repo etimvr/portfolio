@@ -127,7 +127,7 @@ export function AboutMe() {
                         <div style={{marginBottom: 32}}/>
 
                         <div className={classes.text4}>Contacts</div>
-                        <div style={{position: 'absolute', marginLeft: '500px', marginTop: '-80px'}}><img src={arrow}
+                        <div style={{position: 'absolute', marginLeft: '530px', marginTop: '-75px'}}><img src={arrow}
                                                                                                           alt="arrow"/>
                         </div>
                         <div style={{marginBottom: 32}}/>
