@@ -137,10 +137,11 @@
 }
 
 .outer {
-    width: 1420px;
+    width: 100vw;
+    max-width: 1920px;
     overflow: hidden;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 0 max(-250px, calc(-100vw / 2 + 1420px / 2)); /*(1920-1420)/2*/
 }
 
 .carousel {
@@ -149,9 +150,6 @@
     width: fit-content;
     gap: 60px;
     animation: 30s bannermove infinite linear;
-}
-.carousel:hover {
-    animation-play-state: paused;
 }
 
 
