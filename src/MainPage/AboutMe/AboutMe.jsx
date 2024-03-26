@@ -11,6 +11,10 @@ import prequel from "../../assets/works/prequel.png";
 import {Tag} from "../../components/Tag/Tag.jsx";
 import {Link} from "react-router-dom";
 import {routes} from "../../routes.js";
+import heart from "../../assets/main/heart.svg";
+import flower from "../../assets/main/flower.svg";
+import arrow from "../../assets/main/yellow-arrow.svg";
+import dot from "../../assets/main/dot.svg";
 
 export function AboutMe() {
 
@@ -22,7 +26,11 @@ export function AboutMe() {
                 <div className={classes.verticalSplit}>
                     <div className={classes.picture1}><img src={portrait} alt="portrait"/></div>
                     <div>
-                        <div className={classes.text1}>Hey, I’m Sasha, a Senior Product and Visual Designer building
+                        <div style={{position: 'absolute', marginLeft: '-35px', marginTop: '-8px'}}><img src={heart}
+                                                                                                         alt="heart"/>
+                        </div>
+                        <div className={classes.text1} style={{zIndex: 2, position: 'relative'}}>Hey, I’m Sasha, a
+                            Senior Product and Visual Designer building
                             experiences for Prequel in USA.
                         </div>
                         <div style={{marginBottom: 24}}/>
@@ -35,14 +43,17 @@ export function AboutMe() {
                         <div className={classes.text3}>Skills</div>
                         <div style={{marginBottom: 24}}/>
                         <div className={classes.skillsTable}>
-                            <Tag>Product design</Tag>
+                            <Tag>Product Design</Tag>
                             <Tag>Interaction</Tag>
                             <Tag>Research</Tag>
-                            <Tag>Design Strategy</Tag>
-                            <Tag>Mentoring</Tag>
-                            <Tag>Graphic Design</Tag>
                             <Tag>Branding</Tag>
+                            <Tag>Mentoring</Tag>
+                            <Tag>Design Strategy</Tag>
+                            <Tag>Graphic Design</Tag>
                             <Tag>3D Illustrations</Tag>
+                        </div>
+                        <div style={{position: 'absolute', marginLeft: '765px', marginTop: '-80px'}}><img src={flower}
+                                                                                                          alt="flower"/>
                         </div>
                     </div>
                 </div>
@@ -52,32 +63,61 @@ export function AboutMe() {
                         <div className={classes.text4}>Experience</div>
                         <div style={{marginBottom: 32}}/>
 
-                        <div className={classes.text5}>Prequel • Senior Product Designer • 12.2022 - present</div>
-                        <div style={{marginBottom: 16}}/>
-                        <div className={classes.text6}>Part of the design team that completely redesigned, crafted and
-                            shipped the brand new experience for Prequel's numerous products (Prequel, Gio, Oji, Esti)
-                            that’s used by over 5 million people across the world.
+                        <div style={{display: 'flex'}}>
+                            <div style={{marginRight: '12px', marginTop: '5px'}}>
+                                <img src={dot} alt="dot"/>
+                            </div>
+                            <div>
+                                <div className={classes.text5}>Prequel • Senior Product Designer • 12.2022 - present
+                                </div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text6}>Part of the design team that completely redesigned,
+                                    crafted and
+                                    shipped the brand new experience for Prequel's numerous products (Prequel, Gio, Oji,
+                                    Esti)
+                                    that’s used by over 5 million people across the world.
+                                </div>
+                            </div>
                         </div>
                         <div style={{marginBottom: 32}}/>
 
-                        <div className={classes.text5}>TechWings • Senior Product Designer • 11.2020 - 12.2022</div>
-                        <div style={{marginBottom: 16}}/>
-                        <div className={classes.text6}>Worked as a product designer, contributing to several branding
-                            and visual design projects for different clients.
+                        <div style={{display: 'flex'}}>
+                            <div style={{marginRight: '12px', marginTop: '5px'}}>
+                                <img src={dot} alt="dot"/>
+                            </div>
+                            <div>
+                                <div className={classes.text5}>TechWings • Senior Product Designer • 11.2020 - 12.2022
+                                </div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text6}>Worked as a product designer, contributing to several
+                                    branding
+                                    and visual design projects for different clients.
+                                </div>
+                            </div>
                         </div>
                         <div style={{marginBottom: 32}}/>
 
-
-                        <div className={classes.text5}>QLab • UI / UX Designer • 04.2019 - 12.2020</div>
-                        <div style={{marginBottom: 16}}/>
-                        <div className={classes.text6}>Was part of design team in charge of refining our design system
-                            for accessibility, defining guidelines for use, documenting design guidelines and educating
-                            design team.
+                        <div style={{display: 'flex'}}>
+                            <div style={{marginRight: '12px', marginTop: '5px'}}>
+                                <img src={dot} alt="dot"/>
+                            </div>
+                            <div>
+                                <div className={classes.text5}>QLab • UI / UX Designer • 04.2019 - 12.2020</div>
+                                <div style={{marginBottom: 16}}/>
+                                <div className={classes.text6}>Was part of design team in charge of refining our design
+                                    system
+                                    for accessibility, defining guidelines for use, documenting design guidelines and
+                                    educating
+                                    design team.
+                                </div>
+                            </div>
                         </div>
+
+
                         <div style={{marginBottom: 32}}/>
 
                     </div>
-                    <div>
+                    <div className={classes.rightSide}>
                         <div className={classes.text4}>Tools & Methods</div>
                         <div style={{marginBottom: 32}}/>
                         <div className={classes.text6}>CustDev, User Testing, Jobs-To-Be-Done, Journey Mapping, iOS /
@@ -87,6 +127,9 @@ export function AboutMe() {
                         <div style={{marginBottom: 32}}/>
 
                         <div className={classes.text4}>Contacts</div>
+                        <div style={{position: 'absolute', marginLeft: '500px', marginTop: '-80px'}}><img src={arrow}
+                                                                                                          alt="arrow"/>
+                        </div>
                         <div style={{marginBottom: 32}}/>
                         <div className={classes.link}><a href="mailto:sandraovershv@gmail.com"
                                                          style={{color: "black"}}>Email</a></div>

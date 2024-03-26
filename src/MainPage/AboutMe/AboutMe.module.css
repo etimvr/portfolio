@@ -82,8 +82,12 @@
 }
 
 .experience {
-    max-width: 660px;
-    padding-right: 82px;
+    max-width: 686px;
+    padding-right: 134px;
+}
+
+.rightSide {
+    max-width: 583px;
 }
 
 .link {
