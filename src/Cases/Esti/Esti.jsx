@@ -45,7 +45,9 @@ export function Esti() {
             <Header color={colors.milkWhite}/>
             <div className={classes.page}>
                 <div className={classes.inner}>
-                    <div style={{position: 'absolute', left: '79.3%'}}><img src={stars} alt="stars"/></div>
+                    <div style={{position: 'absolute', marginLeft: '1270px', marginTop: '-10px'}}><img src={stars}
+                                                                                                       alt="stars"/>
+                    </div>
                     <div className={classes.text1} style={{zIndex: 2, position: 'relative'}}>Esti: Aesthetic Photo
                         Editor
                     </div>
@@ -113,8 +115,9 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 148}}/>
-                    <div style={{position: 'absolute', left: '37.8%', marginTop: '-40px'}}><img src={heart}
-                                                                                                alt="heart"/></div>
+                    <div style={{position: 'absolute', marginLeft: '475px', marginTop: '-40px'}}><img src={heart}
+                                                                                                      alt="heart"/>
+                    </div>
                     <div className={classes.text3} style={{zIndex: 2, position: 'relative'}}>Quick look at Esti</div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.outer}>
@@ -127,7 +130,8 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 100}}/>
-                    <div style={{position: 'absolute', left: '10.8%', marginTop: '40px'}}><img src={star} alt="star"/>
+                    <div style={{position: 'absolute', marginLeft: '-40px', marginTop: '45px'}}><img src={star}
+                                                                                                     alt="star"/>
                     </div>
                     <div className={classes.text3} style={{maxWidth: 1274, zIndex: 2, position: 'relative'}}>One of the
                         most challenging and innovative
@@ -172,7 +176,8 @@ export function Esti() {
                         analyzing competitors on the same field.
                     </div>
                     <div style={{marginBottom: 42}}/>
-                    <div><img src={whatWeDidFirst} width={1473} alt="what-we-did-first"/></div>
+                    <div style={{marginLeft: '-35px'}}><img src={whatWeDidFirst} width={1473} alt="what-we-did-first"/>
+                    </div>
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.text3}>Insight from product analyst</div>
                     <div style={{marginBottom: 32}}/>
@@ -232,10 +237,11 @@ export function Esti() {
                     <div style={{marginBottom: 64}}/>
                     <div style={{textAlign: "center"}}><img src={research} alt="research"/></div>
                     <div style={{marginBottom: 16}}/>
-                    <div className={classes.text5}>Why only 5 people? We used NNG approach with conducting only 5
+                    <div className={classes.text5}>Why only 5 people? We used <a
+                        href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"
+                        style={{color: "black"}}>NNG approach</a> with conducting only 5
                         interviews.
                     </div>
-                    {/*todo add link later ^*/}
                     <div style={{marginBottom: 100}}/>
                     <div className={classes.text3}>Shortlist of the questions</div>
                     <div style={{position: 'absolute', marginLeft: '1125px', marginTop: '-40px'}}><img src={arrow2}
@@ -243,20 +249,36 @@ export function Esti() {
                     </div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
-                        <div className={classes.text2}>What are your thoughts on having a planner features in the photo
-                            editor?
+                        <div style={{display: 'flex', gap: '16px'}}>
+                            <img src={star3} height={24} alt="star"/>
+                            <div className={classes.text2}>What are your thoughts on having a planner features in the
+                                photo editor?
+                            </div>
                         </div>
-                        <div className={classes.text2}>Do you understand how to use it?</div>
-                        <div className={classes.text2}>Do you recognize what the calendar icon represents?</div>
-                        <div className={classes.text2}>Do you understand the preview of the photo on the date in the
-                            calendar?
+                        <div style={{display: 'flex', gap: '16px'}}>
+                            <img src={star3} height={24} alt="star"/>
+                            <div className={classes.text2}>Do you understand how to use it?</div>
                         </div>
-                        <div className={classes.text2}>Do you understand when the photo was posted to the Instagram?
+                        <div style={{display: 'flex', gap: '16px'}}>
+                            <img src={star3} height={24} alt="star"/>
+                            <div className={classes.text2}>Do you recognize what the calendar icon represents?</div>
+                        </div>
+                        <div style={{display: 'flex', gap: '16px'}}>
+                            <img src={star3} height={24} alt="star"/>
+                            <div className={classes.text2}>Do you understand the preview of the photo on the date in the
+                                calendar?
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', gap: '16px'}}>
+                            <img src={star3} height={24} alt="star"/>
+                            <div className={classes.text2}>Do you understand when the photo was posted to the Instagram?
+                            </div>
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div style={{position: 'absolute', left: '39.7%', marginTop: '-20px'}}><img src={heart2}
-                                                                                                alt="heart2"/></div>
+                    <div style={{position: 'absolute', marginLeft: '527px', marginTop: '-10px'}}><img src={heart2}
+                                                                                                      alt="heart2"/>
+                    </div>
                     <div className={classes.text6} style={{zIndex: 2, position: 'relative'}}>Esti user personas</div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.shortlist}>
@@ -329,6 +351,9 @@ export function Esti() {
                     </div>
                     <div style={{marginBottom: 64}}/>
                     <div className={classes.text6}>Here you can see some stats from the interviews</div>
+                    <div style={{position: 'absolute', marginLeft: '1175px', marginTop: '-15px'}}><img src={arrow3}
+                                                                                                       alt="arrow3"/>
+                    </div>
                     <div style={{marginBottom: 42}}/>
                     <div style={{textAlign: "center"}}><img src={chart1} alt="chart1"/></div>
                     <div style={{marginBottom: 16}}/>
@@ -343,7 +368,10 @@ export function Esti() {
                         planner.
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.text6}>Summary</div>
+                    <div className={classes.text6} style={{zIndex: 2, position: 'relative'}}>Summary</div>
+                    <div style={{position: 'absolute', marginLeft: '753px', marginTop: '-55px'}}><img src={heart3}
+                                                                                                      alt="heart3"/>
+                    </div>
                     <div style={{marginBottom: 42}}/>
                     <div><img src={summary} alt="summary"/></div>
                     <div style={{marginBottom: 64}}/>
@@ -375,30 +403,37 @@ export function Esti() {
                     <div className={classes.text6}>After conducting research, I focused on the following points:</div>
                     <div style={{marginBottom: 32}}/>
                     <div className={classes.points}>
-                        <div className={classes.text2}>1. Improve the planner's UX. Conduct additional market research,
-                            taking
-                            into account the results of
-                            user interviews.
+                        <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
+                            <div className={classes.text7}>1.</div>
+                            <div className={classes.text2} style={{width: '1379px'}}>Improve the planner's UX. Conduct additional market research,
+                                taking into account the results of user interviews.
+                            </div>
                         </div>
-                        <div className={classes.text2}>2. Refine the content on the onboarding screens, as we noticed
-                            issues
-                            among users during the
-                            interviews.
+                        <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
+                            <div className={classes.text7}>2.</div>
+                            <div className={classes.text2} style={{width: '1379px'}}>Refine the content on the onboarding screens, as we noticed issues among users during the interviews.</div>
                         </div>
-                        <div className={classes.text2}>3. Change the zero state of the main screen, making it more
-                            aesthetically
-                            pleasing and selecting
-                            non-stock looking content.
+                        <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
+                            <div className={classes.text7}>3.</div>
+                            <div className={classes.text2} style={{width: '1379px'}}>Change the zero state of the main screen, making it more aesthetically pleasing and selecting non-stock looking content.</div>
                         </div>
                     </div>
                     <div style={{marginBottom: 100}}/>
-                    <div className={classes.text3} style={{textAlign: "center"}}>Let’s start designing</div>
+                    <div className={classes.text3} style={{textAlign: "center", zIndex: 2, position: 'relative'}}>Let’s
+                        start designing
+                    </div>
+                    <div style={{position: 'absolute', marginLeft: '985px', marginTop: '-80px'}}><img src={heart4}
+                                                                                                      alt="heart4"/>
+                    </div>
                     <div style={{marginBottom: 42}}/>
                     <div className={classes.text6}>Planner Zero Screen</div>
                     <div style={{marginBottom: 42}}/>
                     <div><img src={screen1} alt="screen1" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.text6}>Entry Point</div>
+                    <div style={{position: 'absolute', marginLeft: '782px', marginTop: '-8px'}}><img src={heart5}
+                                                                                                     alt="heart5"/>
+                    </div>
+                    <div className={classes.text6} style={{zIndex: 2, position: 'relative'}}>Entry Point</div>
                     <div style={{marginBottom: 42}}/>
                     <div><img src={screen2} alt="screen2" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
@@ -410,7 +445,10 @@ export function Esti() {
                     <div style={{marginBottom: 42}}/>
                     <div><img src={screen4} alt="screen4" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.text6}>Quick Edit</div>
+                    <div style={{position: 'absolute', marginLeft: '772px', marginTop: '-25px'}}><img src={star3}
+                                                                                                      alt="star3"/>
+                    </div>
+                    <div className={classes.text6} style={{zIndex: '2', position: 'relative'}}>Quick Edit</div>
                     <div style={{marginBottom: 42}}/>
                     <div><img src={screen5} alt="screen5" width={1420}/></div>
                     <div style={{marginBottom: 64}}/>
