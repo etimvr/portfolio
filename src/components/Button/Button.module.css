@@ -12,22 +12,25 @@
     overflow: hidden; /* Ensures the expanding circle stays within button boundaries */
 }
 
-.button::after {
-  content: '';
-  position: absolute;
-  background-color: #FAA57B;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  opacity: 0;
-  bottom: 0;
-  left: 50%;
+.button::after { /* .button::after = circle basically */
+    content: '';
+    position: absolute;
+    background-color: #FAA57B;
+    border-radius: 50%;
+    width: 15%;
+    height: 30%;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    transition: transform 0.35s ease-out, opacity 0.35s ease-out;
+    animation: unExpandCircle 0.35s ease-out forwards;
 }
 
 .button:hover::after {
-  opacity: 1;
-  z-index: 0;
-  animation: expandCircle 3s ease-out forwards; /* Animation to expand the circle */
+    opacity: 1;
+    z-index: 0;
+    animation: expandCircle 0.35s ease-out forwards; /* Animation to expand the circle */
+
 }
 
 .button:active {
@@ -35,13 +38,23 @@
 }
 
 @keyframes expandCircle {
-  0% {
-    transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
-  }
-  100% {
+    0% {
+        transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
+    }
+    100% {
         transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
-  }
+    }
 }
+
+@keyframes unExpandCircle {
+    0% {
+        transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
+    }
+    100% {
+        transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
+    }
+}
+
 .text {
     font-family: "IBM Plex Mono";
     font-size: 20px;
