@@ -29,7 +29,6 @@ export function Content() {
                     <Button icon={arrowUp} onClick={()=>{scrollToId('my-work')}}>MY WORK</Button>
                     <Button icon={smile}>CONTACT ME</Button>
                 </div>
-
             </div>
         </div>
     )

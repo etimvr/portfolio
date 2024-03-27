@@ -221,7 +221,7 @@ export function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <div style={{marginBottom: 100}}/>
+                <div style={{marginBottom: 150}}/>
             </div>
 
         </div>

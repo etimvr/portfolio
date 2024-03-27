@@ -474,7 +474,7 @@ export function Esti() {
                     <div style={{justifyContent: "center", display: "flex"}}><Button icon={arrowUp} onClick={() => {
                         navigate(routes.prequel);
                     }}>NEXT CASE</Button></div>
-                    <div style={{marginBottom: 100}}/>
+                    <div style={{marginBottom: 130}}/>
                 </div>
             </div>
             <Footer color={colors.lightGreen}/>
