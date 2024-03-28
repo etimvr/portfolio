@@ -13,13 +13,13 @@ import screen2 from "../../assets/esti/screen2.png";
 import screen3 from "../../assets/esti/screen3.png";
 import screen4 from "../../assets/esti/screen4.png";
 import screen5 from "../../assets/esti/screen5.png";
-import screen6 from "../../assets/esti/screen6.png";
 import summary from "../../assets/esti/summary.png";
 import heart from "../../assets/esti/heart.svg";
 import heart2 from "../../assets/esti/heart2.svg";
 import heart3 from "../../assets/esti/heart3.svg";
 import heart4 from "../../assets/esti/heart4.svg";
 import heart5 from "../../assets/esti/heart5.svg";
+import hearts from "../../assets/esti/hearts.svg";
 import arrow from "../../assets/esti/arrow.svg";
 import arrow2 from "../../assets/esti/arrow2.svg";
 import arrow3 from "../../assets/esti/arrow3.svg";
@@ -27,6 +27,9 @@ import stars from "../../assets/esti/stars.svg";
 import star from "../../assets/esti/star.svg";
 import star2 from "../../assets/esti/star2.svg";
 import star3 from "../../assets/esti/star3.svg";
+import before1 from "../../assets/esti/before1.png";
+import before2 from "../../assets/esti/before2.png";
+import video from "../../assets/esti/esti-video.ogg";
 import weirdThing from "../../assets/esti/weird-thing.svg";
 import {Button} from "../../components/Button/Button.jsx";
 import arrowUp from "../../assets/common/arrow-up.svg";
@@ -405,17 +408,22 @@ export function Esti() {
                     <div className={classes.points}>
                         <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
                             <div className={classes.text7}>1.</div>
-                            <div className={classes.text2} style={{width: '1379px'}}>Improve the planner's UX. Conduct additional market research,
+                            <div className={classes.text2} style={{width: '1379px'}}>Improve the planner's UX. Conduct
+                                additional market research,
                                 taking into account the results of user interviews.
                             </div>
                         </div>
                         <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
                             <div className={classes.text7}>2.</div>
-                            <div className={classes.text2} style={{width: '1379px'}}>Refine the content on the onboarding screens, as we noticed issues among users during the interviews.</div>
+                            <div className={classes.text2} style={{width: '1379px'}}>Refine the content on the
+                                onboarding screens, as we noticed issues among users during the interviews.
+                            </div>
                         </div>
                         <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
                             <div className={classes.text7}>3.</div>
-                            <div className={classes.text2} style={{width: '1379px'}}>Change the zero state of the main screen, making it more aesthetically pleasing and selecting non-stock looking content.</div>
+                            <div className={classes.text2} style={{width: '1379px'}}>Change the zero state of the main
+                                screen, making it more aesthetically pleasing and selecting non-stock looking content.
+                            </div>
                         </div>
                     </div>
                     <div style={{marginBottom: 100}}/>
@@ -507,7 +515,30 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div><img src={screen6} alt="screen6" width={1420}/></div>
+                    <div className={classes.videoBox}
+                         style={{textAlign: 'center', backgroundColor: colors.lightLightGreen}}>
+                        <div style={{display: 'flex', alignSelf: 'center', flexDirection: 'column'}}>
+                            <div><img src={before1} width={260} height={563} alt="before1"/></div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text5}>Before</div>
+                        </div>
+                        <div style={{display: 'flex', alignSelf: 'center', flexDirection: 'column'}}>
+                            <video width="300" height="648" controls loop autoPlay={true}>
+                                <source src={video} type="video/ogg"/>
+                            </video>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text5}>After</div>
+                            <div style={{position: 'absolute', marginLeft: '250px', marginTop: '600px'}}><img
+                                src={hearts}
+                                alt="hearts"/>
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', alignSelf: 'center', flexDirection: 'column'}}>
+                            <div><img src={before2} width={260} height={563} alt="before2"/></div>
+                            <div style={{marginBottom: 16}}/>
+                            <div className={classes.text5}>Before</div>
+                        </div>
+                    </div>
                     <div style={{marginBottom: 100}}/>
                     <div style={{justifyContent: "center", display: "flex"}}><Button icon={arrowUp} onClick={() => {
                         navigate(routes.prequel);
